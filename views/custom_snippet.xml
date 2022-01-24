@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="custom_snippets" name="Custom Snippets">
+            <section class="s_references bg-gray-lighter">
+                <div class="container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Number of students</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="i" t-value="1"/>
+                            <t t-foreach="courses" t-as="course">
+                                <tr>
+                                    <th>
+                                        <t t-esc="i"/>
+                                    </th>
+                                    <th>
+                                        <a t-attf-href="/course/#{course.id}/">
+                                            <t t-esc="course.name"/>
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <t t-esc="course.number_students_in_course"/>
+                                    </th>
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>

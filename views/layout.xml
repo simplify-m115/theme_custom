@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="theme_Courses_layout" name="coustom_layout" inherit_id="website.layout">
+            <xpath expr="//div[@id='wrapwrap']/main" position="before">
+               <div class="oe_structure"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
