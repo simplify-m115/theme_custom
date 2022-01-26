@@ -3,7 +3,7 @@
     <data>
         <template id="custom_snippets" name="Custom Snippets">
             <section class="s_references bg-gray-lighter">
-                <div class="container">
+                <div class="container mt-10">
                     <table class="table">
                         <thead>
                             <tr>
@@ -14,6 +14,7 @@
                         </thead>
                         <tbody>
                             <t t-set="i" t-value="1"/>
+                            <t t-set="courses" t-value="env['courses.courses'].search([])"/>
                             <t t-foreach="courses" t-as="course">
                                 <tr>
                                     <th>
