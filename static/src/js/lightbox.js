@@ -19,4 +19,10 @@ lightbox.addEventListener('click', e=> {
     lightbox.classList.remove('active')
 })
 
-//alert("wow");
+$(document).ready(function(){
+    $(document).bind('keydown', function(e) {
+    if (e.which == 27) {
+        lightbox.classList.remove('active');
+    }
+    });
+});
