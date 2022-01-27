@@ -3,6 +3,7 @@
     <data>
         <template id="theme_Courses_Assets" inherit_id="website.assets_frontend">
             <xpath expr="link[last()]" position="after">
+                <link rel="stylesheet" type="text/scss" href="/theme_custom/static/src/css/style_custom_theme.css"/>
                 <link rel="stylesheet" type="text/scss" href="/theme_custom/static/src/css/lightbox.css"/>
             </xpath>
             <xpath expr="script[last()]" position="after">
